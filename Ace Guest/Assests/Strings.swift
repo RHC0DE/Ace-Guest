@@ -4,8 +4,6 @@
 
 import Foundation
 
-import Foundation
-
 struct Strings {
     
     static let registerTitle = "Registreer uw toegangspas."
@@ -23,8 +21,8 @@ struct Strings {
     static let landingTitle = "Welkom \nbij Club Ace!"
     static let landingBody = "Doorloop deze snelle setup om het meeste uit deze app te halen."
     static let letsGo = "Let's go!"
-    static let notificationOnBoardingTitle = "Mis geen belangrijke berichten zoals de status updates van uw huidige afspraak!"
-    static let bluethoothOnBoardingTitle = "We willen toegang tot NFC om de app te verbinden met de deur bij het betreden van Ace kantoren."
+    static let notificationOnBoardingTitle = "Tijdens het betreden van het Club Ace kantoor worden belangrijke berichten verstuurd zoals de status updates van uw huidige afspraak!"
+    static let bluethoothOnBoardingTitle = "Om de deuren te openen van het Club Ace kantoor wordt NFC toegepast!"
     static let next = "Volgende"
     static let dismiss = "Annuleer"
     static let ourConditionsTitle = "Onze voorwaarden"
@@ -66,7 +64,4 @@ struct Strings {
     static let URL = "https://fcm.googleapis.com/fcm/send"
     static let serverKey = "AAAAmwijXZs:APA91bEZML7a3tSj5ZXx_blAMatrHwlroRrHfuqCF8n3gpW6dFwAPVncQdZOBlwkfodfxJRhl7OiS1zBnH8oUNwLQB7Unk6KHlRr3LhpdQbvL6GZ4pRMLTLUV2EIRPUpI1lcFIUTAza7"
     static let deviceToken = "e3iQq5Mv8k2EoD0VuVdylb:APA91bGnUx8St4agnBfmRGbm5NnF2Pxio9lB0Vtt3TKUo6O4M2UiawlXJBqV874gCl_hhL-g9zd5K8L3AmjuCjiJcnap80jAvDJY8hsMpUGhNfYmyWlj4Mo5xncFGZk9PFzk66dFctky"
-    static let pnsTitle = " is in the Club Ace building!"
-    static let pnsBodyTxt = "For the meeting of " // voeg nog 'till erachter toe'
-    
 }
