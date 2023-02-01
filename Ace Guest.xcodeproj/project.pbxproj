@@ -11,6 +11,47 @@
 		315FFA9729896E2500702DDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFA9629896E2500702DDC /* ContentView.swift */; };
 		315FFA9929896E2600702DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315FFA9829896E2600702DDC /* Assets.xcassets */; };
 		315FFA9C29896E2600702DDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315FFA9B29896E2600702DDC /* Preview Assets.xcassets */; };
+		315FFAA6298A7CAA00702DDC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 315FFAA5298A7CAA00702DDC /* FirebaseAnalytics */; };
+		315FFAA8298A7CAA00702DDC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 315FFAA7298A7CAA00702DDC /* FirebaseAuth */; };
+		315FFAAA298A7CAA00702DDC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 315FFAA9298A7CAA00702DDC /* FirebaseFirestore */; };
+		315FFAAC298A7CAA00702DDC /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 315FFAAB298A7CAA00702DDC /* FirebaseMessaging */; };
+		315FFAAE298A7CAA00702DDC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 315FFAAD298A7CAA00702DDC /* FirebaseStorage */; };
+		315FFAB0298A7DB000702DDC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 315FFAAF298A7DB000702DDC /* GoogleService-Info.plist */; };
+		315FFAB3298A7E7C00702DDC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAB2298A7E7C00702DDC /* Colors.swift */; };
+		315FFAB5298A7EA400702DDC /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAB4298A7EA400702DDC /* Images.swift */; };
+		315FFAB7298A7EF000702DDC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAB6298A7EF000702DDC /* Strings.swift */; };
+		315FFAB9298A85C100702DDC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315FFAB8298A85C100702DDC /* Launch Screen.storyboard */; };
+		315FFABD298A878D00702DDC /* AceLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFABC298A878D00702DDC /* AceLogo.swift */; };
+		315FFABF298A87BE00702DDC /* FormSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFABE298A87BE00702DDC /* FormSpacer.swift */; };
+		315FFAC1298A87F200702DDC /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAC0298A87F200702DDC /* PrimaryButtonStyle.swift */; };
+		315FFAC3298A883B00702DDC /* GrayedOutButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAC2298A883B00702DDC /* GrayedOutButtonLabel.swift */; };
+		315FFAC5298A888F00702DDC /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAC4298A888F00702DDC /* ButtonLabel.swift */; };
+		315FFAC9298A8CDE00702DDC /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAC8298A8CDE00702DDC /* Appointment.swift */; };
+		315FFACB298A8D0900702DDC /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFACA298A8D0900702DDC /* OnBoarding.swift */; };
+		315FFACD298A8D9A00702DDC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFACC298A8D9A00702DDC /* Message.swift */; };
+		315FFAD0298AA90200702DDC /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFACF298AA90200702DDC /* FirebaseManager.swift */; };
+		315FFAD2298AA97B00702DDC /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAD1298AA97B00702DDC /* NotificationManager.swift */; };
+		315FFAD4298AAA6B00702DDC /* NFCReaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAD3298AAA6B00702DDC /* NFCReaderManager.swift */; };
+		315FFADA298AB03400702DDC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAD9298AB03400702DDC /* CardView.swift */; };
+		315FFADD298AB06D00702DDC /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFADC298AB06D00702DDC /* LandingPageView.swift */; };
+		315FFADF298AB07900702DDC /* OnBoardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFADE298AB07900702DDC /* OnBoardingContainerView.swift */; };
+		315FFAE2298AB08F00702DDC /* OnBoardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAE1298AB08F00702DDC /* OnBoardingContentView.swift */; };
+		315FFAE4298AB09B00702DDC /* OnBoardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAE3298AB09B00702DDC /* OnBoardingViewModel.swift */; };
+		315FFAE6298AB0E200702DDC /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAE5298AB0E200702DDC /* TermsAndConditionsView.swift */; };
+		315FFAE9298AB20C00702DDC /* AppointmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAE8298AB20C00702DDC /* AppointmentViewModel.swift */; };
+		315FFAEB298AC1F000702DDC /* GuestLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAEA298AC1F000702DDC /* GuestLoginView.swift */; };
+		315FFAED298AC25000702DDC /* GuestRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAEC298AC25000702DDC /* GuestRegisterView.swift */; };
+		315FFAF1298AC40A00702DDC /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAF0298AC40A00702DDC /* SettingView.swift */; };
+		315FFAF3298AC46400702DDC /* SetttingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAF2298AC46400702DDC /* SetttingRow.swift */; };
+		315FFAF5298AC4D700702DDC /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAF4298AC4D700702DDC /* SettingViewModel.swift */; };
+		315FFAF8298AC51A00702DDC /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAF7298AC51A00702DDC /* AboutView.swift */; };
+		315FFAFB298AC55300702DDC /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAFA298AC55300702DDC /* AppSettingsView.swift */; };
+		315FFAFE298AC5D000702DDC /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAFD298AC5D000702DDC /* MessagesView.swift */; };
+		315FFB00298AC5DF00702DDC /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFAFF298AC5DF00702DDC /* MessageCell.swift */; };
+		315FFB02298AC5F600702DDC /* MessageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFB01298AC5F600702DDC /* MessageDetail.swift */; };
+		315FFB04298AC60700702DDC /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFB03298AC60700702DDC /* MessagesViewModel.swift */; };
+		315FFB07298AC74900702DDC /* PersonalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFB06298AC74900702DDC /* PersonalDetailsView.swift */; };
+		315FFB09298AC79600702DDC /* PersonalDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFB08298AC79600702DDC /* PersonalDetailRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +60,44 @@
 		315FFA9629896E2500702DDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		315FFA9829896E2600702DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		315FFA9B29896E2600702DDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		315FFAA2298A79E300702DDC /* Ace-Guest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Ace-Guest-Info.plist"; sourceTree = SOURCE_ROOT; };
+		315FFAA3298A7A7000702DDC /* Ace Guest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ace Guest.entitlements"; sourceTree = "<group>"; };
+		315FFAAF298A7DB000702DDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		315FFAB2298A7E7C00702DDC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		315FFAB4298A7EA400702DDC /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		315FFAB6298A7EF000702DDC /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		315FFAB8298A85C100702DDC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		315FFABC298A878D00702DDC /* AceLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AceLogo.swift; sourceTree = "<group>"; };
+		315FFABE298A87BE00702DDC /* FormSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSpacer.swift; sourceTree = "<group>"; };
+		315FFAC0298A87F200702DDC /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		315FFAC2298A883B00702DDC /* GrayedOutButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayedOutButtonLabel.swift; sourceTree = "<group>"; };
+		315FFAC4298A888F00702DDC /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
+		315FFAC8298A8CDE00702DDC /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		315FFACA298A8D0900702DDC /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		315FFACC298A8D9A00702DDC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		315FFACF298AA90200702DDC /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		315FFAD1298AA97B00702DDC /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		315FFAD3298AAA6B00702DDC /* NFCReaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReaderManager.swift; sourceTree = "<group>"; };
+		315FFAD9298AB03400702DDC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		315FFADC298AB06D00702DDC /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
+		315FFADE298AB07900702DDC /* OnBoardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerView.swift; sourceTree = "<group>"; };
+		315FFAE1298AB08F00702DDC /* OnBoardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContentView.swift; sourceTree = "<group>"; };
+		315FFAE3298AB09B00702DDC /* OnBoardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewModel.swift; sourceTree = "<group>"; };
+		315FFAE5298AB0E200702DDC /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
+		315FFAE8298AB20C00702DDC /* AppointmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewModel.swift; sourceTree = "<group>"; };
+		315FFAEA298AC1F000702DDC /* GuestLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestLoginView.swift; sourceTree = "<group>"; };
+		315FFAEC298AC25000702DDC /* GuestRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestRegisterView.swift; sourceTree = "<group>"; };
+		315FFAF0298AC40A00702DDC /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		315FFAF2298AC46400702DDC /* SetttingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetttingRow.swift; sourceTree = "<group>"; };
+		315FFAF4298AC4D700702DDC /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		315FFAF7298AC51A00702DDC /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		315FFAFA298AC55300702DDC /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
+		315FFAFD298AC5D000702DDC /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		315FFAFF298AC5DF00702DDC /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		315FFB01298AC5F600702DDC /* MessageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetail.swift; sourceTree = "<group>"; };
+		315FFB03298AC60700702DDC /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
+		315FFB06298AC74900702DDC /* PersonalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsView.swift; sourceTree = "<group>"; };
+		315FFB08298AC79600702DDC /* PersonalDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +105,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315FFAAC298A7CAA00702DDC /* FirebaseMessaging in Frameworks */,
+				315FFAA6298A7CAA00702DDC /* FirebaseAnalytics in Frameworks */,
+				315FFAA8298A7CAA00702DDC /* FirebaseAuth in Frameworks */,
+				315FFAAE298A7CAA00702DDC /* FirebaseStorage in Frameworks */,
+				315FFAAA298A7CAA00702DDC /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +135,16 @@
 		315FFA9329896E2500702DDC /* Ace Guest */ = {
 			isa = PBXGroup;
 			children = (
+				315FFAA3298A7A7000702DDC /* Ace Guest.entitlements */,
+				315FFAAF298A7DB000702DDC /* GoogleService-Info.plist */,
+				315FFAA2298A79E300702DDC /* Ace-Guest-Info.plist */,
 				315FFA9429896E2500702DDC /* Ace_GuestApp.swift */,
 				315FFA9629896E2500702DDC /* ContentView.swift */,
-				315FFA9829896E2600702DDC /* Assets.xcassets */,
+				315FFAB1298A7E5F00702DDC /* Assests */,
+				315FFABA298A873500702DDC /* Components */,
+				315FFAC6298A8CAE00702DDC /* Data */,
+				315FFACE298A8E1500702DDC /* Managers */,
+				315FFAD5298AAF8900702DDC /* Presentation */,
 				315FFA9A29896E2600702DDC /* Preview Content */,
 			);
 			path = "Ace Guest";
@@ -65,6 +156,173 @@
 				315FFA9B29896E2600702DDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		315FFAB1298A7E5F00702DDC /* Assests */ = {
+			isa = PBXGroup;
+			children = (
+				315FFA9829896E2600702DDC /* Assets.xcassets */,
+				315FFAB2298A7E7C00702DDC /* Colors.swift */,
+				315FFAB4298A7EA400702DDC /* Images.swift */,
+				315FFAB6298A7EF000702DDC /* Strings.swift */,
+				315FFAB8298A85C100702DDC /* Launch Screen.storyboard */,
+			);
+			path = Assests;
+			sourceTree = "<group>";
+		};
+		315FFABA298A873500702DDC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				315FFABB298A875700702DDC /* UI */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		315FFABB298A875700702DDC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				315FFABC298A878D00702DDC /* AceLogo.swift */,
+				315FFAC4298A888F00702DDC /* ButtonLabel.swift */,
+				315FFABE298A87BE00702DDC /* FormSpacer.swift */,
+				315FFAC2298A883B00702DDC /* GrayedOutButtonLabel.swift */,
+				315FFAC0298A87F200702DDC /* PrimaryButtonStyle.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		315FFAC6298A8CAE00702DDC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				315FFAC7298A8CCA00702DDC /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		315FFAC7298A8CCA00702DDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				315FFAC8298A8CDE00702DDC /* Appointment.swift */,
+				315FFACA298A8D0900702DDC /* OnBoarding.swift */,
+				315FFACC298A8D9A00702DDC /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		315FFACE298A8E1500702DDC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				315FFACF298AA90200702DDC /* FirebaseManager.swift */,
+				315FFAD1298AA97B00702DDC /* NotificationManager.swift */,
+				315FFAD3298AAA6B00702DDC /* NFCReaderManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		315FFAD5298AAF8900702DDC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				315FFAD7298AAFCD00702DDC /* UI */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		315FFAD7298AAFCD00702DDC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				315FFAD8298AB00D00702DDC /* Acces Card */,
+				315FFADB298AB04600702DDC /* OnBoarding */,
+				315FFAE7298AB18900702DDC /* Guest */,
+				315FFAEE298AC3A100702DDC /* Settings */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		315FFAD8298AB00D00702DDC /* Acces Card */ = {
+			isa = PBXGroup;
+			children = (
+				315FFAD9298AB03400702DDC /* CardView.swift */,
+			);
+			path = "Acces Card";
+			sourceTree = "<group>";
+		};
+		315FFADB298AB04600702DDC /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				315FFADC298AB06D00702DDC /* LandingPageView.swift */,
+				315FFADE298AB07900702DDC /* OnBoardingContainerView.swift */,
+				315FFAE1298AB08F00702DDC /* OnBoardingContentView.swift */,
+				315FFAE3298AB09B00702DDC /* OnBoardingViewModel.swift */,
+				315FFAE5298AB0E200702DDC /* TermsAndConditionsView.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		315FFAE7298AB18900702DDC /* Guest */ = {
+			isa = PBXGroup;
+			children = (
+				315FFAE8298AB20C00702DDC /* AppointmentViewModel.swift */,
+				315FFAEA298AC1F000702DDC /* GuestLoginView.swift */,
+				315FFAEC298AC25000702DDC /* GuestRegisterView.swift */,
+			);
+			path = Guest;
+			sourceTree = "<group>";
+		};
+		315FFAEE298AC3A100702DDC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				315FFAEF298AC3D200702DDC /* Settings Options */,
+				315FFAF2298AC46400702DDC /* SetttingRow.swift */,
+				315FFAF0298AC40A00702DDC /* SettingView.swift */,
+				315FFAF4298AC4D700702DDC /* SettingViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		315FFAEF298AC3D200702DDC /* Settings Options */ = {
+			isa = PBXGroup;
+			children = (
+				315FFAF6298AC51000702DDC /* About */,
+				315FFAF9298AC53B00702DDC /* App Settings */,
+				315FFAFC298AC58D00702DDC /* Message */,
+				315FFB05298AC71800702DDC /* Personal */,
+			);
+			path = "Settings Options";
+			sourceTree = "<group>";
+		};
+		315FFAF6298AC51000702DDC /* About */ = {
+			isa = PBXGroup;
+			children = (
+				315FFAF7298AC51A00702DDC /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		315FFAF9298AC53B00702DDC /* App Settings */ = {
+			isa = PBXGroup;
+			children = (
+				315FFAFA298AC55300702DDC /* AppSettingsView.swift */,
+			);
+			path = "App Settings";
+			sourceTree = "<group>";
+		};
+		315FFAFC298AC58D00702DDC /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				315FFAFD298AC5D000702DDC /* MessagesView.swift */,
+				315FFAFF298AC5DF00702DDC /* MessageCell.swift */,
+				315FFB01298AC5F600702DDC /* MessageDetail.swift */,
+				315FFB03298AC60700702DDC /* MessagesViewModel.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		315FFB05298AC71800702DDC /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				315FFB06298AC74900702DDC /* PersonalDetailsView.swift */,
+				315FFB08298AC79600702DDC /* PersonalDetailRow.swift */,
+			);
+			path = Personal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +341,13 @@
 			dependencies = (
 			);
 			name = "Ace Guest";
+			packageProductDependencies = (
+				315FFAA5298A7CAA00702DDC /* FirebaseAnalytics */,
+				315FFAA7298A7CAA00702DDC /* FirebaseAuth */,
+				315FFAA9298A7CAA00702DDC /* FirebaseFirestore */,
+				315FFAAB298A7CAA00702DDC /* FirebaseMessaging */,
+				315FFAAD298A7CAA00702DDC /* FirebaseStorage */,
+			);
 			productName = "Ace Guest";
 			productReference = 315FFA9129896E2500702DDC /* Ace Guest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +376,9 @@
 				Base,
 			);
 			mainGroup = 315FFA8829896E2500702DDC;
+			packageReferences = (
+				315FFAA4298A7CAA00702DDC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 315FFA9229896E2500702DDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +395,8 @@
 			files = (
 				315FFA9C29896E2600702DDC /* Preview Assets.xcassets in Resources */,
 				315FFA9929896E2600702DDC /* Assets.xcassets in Resources */,
+				315FFAB9298A85C100702DDC /* Launch Screen.storyboard in Resources */,
+				315FFAB0298A7DB000702DDC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +408,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				315FFA9729896E2500702DDC /* ContentView.swift in Sources */,
+				315FFAED298AC25000702DDC /* GuestRegisterView.swift in Sources */,
+				315FFAB5298A7EA400702DDC /* Images.swift in Sources */,
+				315FFAF8298AC51A00702DDC /* AboutView.swift in Sources */,
+				315FFAE6298AB0E200702DDC /* TermsAndConditionsView.swift in Sources */,
+				315FFAD0298AA90200702DDC /* FirebaseManager.swift in Sources */,
+				315FFAE2298AB08F00702DDC /* OnBoardingContentView.swift in Sources */,
+				315FFAC9298A8CDE00702DDC /* Appointment.swift in Sources */,
+				315FFAC3298A883B00702DDC /* GrayedOutButtonLabel.swift in Sources */,
+				315FFABF298A87BE00702DDC /* FormSpacer.swift in Sources */,
+				315FFAFE298AC5D000702DDC /* MessagesView.swift in Sources */,
+				315FFAD4298AAA6B00702DDC /* NFCReaderManager.swift in Sources */,
+				315FFADD298AB06D00702DDC /* LandingPageView.swift in Sources */,
+				315FFAE4298AB09B00702DDC /* OnBoardingViewModel.swift in Sources */,
+				315FFAFB298AC55300702DDC /* AppSettingsView.swift in Sources */,
+				315FFAEB298AC1F000702DDC /* GuestLoginView.swift in Sources */,
+				315FFABD298A878D00702DDC /* AceLogo.swift in Sources */,
+				315FFB00298AC5DF00702DDC /* MessageCell.swift in Sources */,
+				315FFAC1298A87F200702DDC /* PrimaryButtonStyle.swift in Sources */,
+				315FFAF5298AC4D700702DDC /* SettingViewModel.swift in Sources */,
+				315FFB04298AC60700702DDC /* MessagesViewModel.swift in Sources */,
+				315FFB09298AC79600702DDC /* PersonalDetailRow.swift in Sources */,
+				315FFAC5298A888F00702DDC /* ButtonLabel.swift in Sources */,
+				315FFAB7298A7EF000702DDC /* Strings.swift in Sources */,
+				315FFACD298A8D9A00702DDC /* Message.swift in Sources */,
+				315FFADF298AB07900702DDC /* OnBoardingContainerView.swift in Sources */,
+				315FFAF3298AC46400702DDC /* SetttingRow.swift in Sources */,
+				315FFAB3298A7E7C00702DDC /* Colors.swift in Sources */,
+				315FFAD2298AA97B00702DDC /* NotificationManager.swift in Sources */,
+				315FFB07298AC74900702DDC /* PersonalDetailsView.swift in Sources */,
+				315FFAF1298AC40A00702DDC /* SettingView.swift in Sources */,
+				315FFAE9298AB20C00702DDC /* AppointmentViewModel.swift in Sources */,
+				315FFACB298A8D0900702DDC /* OnBoarding.swift in Sources */,
+				315FFADA298AB03400702DDC /* CardView.swift in Sources */,
+				315FFB02298AC5F600702DDC /* MessageDetail.swift in Sources */,
 				315FFA9529896E2500702DDC /* Ace_GuestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -264,15 +568,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Ace Guest/Ace Guest.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ace Guest/Preview Content\"";
 				DEVELOPMENT_TEAM = WYCRCBR2GK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Ace-Guest-Info.plist";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "We need to access NFC functionality to use the HID Reader";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -280,7 +588,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rhc0de.Ace-Guest";
+				PRODUCT_BUNDLE_IDENTIFIER = com.labela.RynoTestID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -293,15 +601,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Ace Guest/Ace Guest.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ace Guest/Preview Content\"";
 				DEVELOPMENT_TEAM = WYCRCBR2GK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Ace-Guest-Info.plist";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "We need to access NFC functionality to use the HID Reader";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,7 +621,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rhc0de.Ace-Guest";
+				PRODUCT_BUNDLE_IDENTIFIER = com.labela.RynoTestID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,6 +651,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		315FFAA4298A7CAA00702DDC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		315FFAA5298A7CAA00702DDC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 315FFAA4298A7CAA00702DDC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		315FFAA7298A7CAA00702DDC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 315FFAA4298A7CAA00702DDC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		315FFAA9298A7CAA00702DDC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 315FFAA4298A7CAA00702DDC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		315FFAAB298A7CAA00702DDC /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 315FFAA4298A7CAA00702DDC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		315FFAAD298A7CAA00702DDC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 315FFAA4298A7CAA00702DDC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 315FFA8929896E2500702DDC /* Project object */;
 }

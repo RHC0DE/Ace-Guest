@@ -1,0 +1,29 @@
+//
+//  ButtonLabel.swift
+//  Ace Guest
+//
+//  Created by Guest User on 01/02/2023.
+//
+
+import SwiftUI
+
+struct ButtonLabel: View {
+    
+    @State var btnTitle: String
+    
+    var body: some View {
+        
+        Text(btnTitle)
+            .foregroundColor(.white)
+            .bold()
+            .frame(width: 210, height: 50)
+            .background(Color.red)
+            .clipShape(Capsule())
+    }
+}
+
+struct ButtonLabel_Previews: PreviewProvider {
+    static var previews: some View {
+        ButtonLabel(btnTitle: "Test Button")
+    }
+}
