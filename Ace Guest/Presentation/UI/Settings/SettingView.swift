@@ -21,28 +21,28 @@ struct SettingView: View {
                         
                         NavigationLink(destination: MessagesView(), label: {
                             
-                            SetttingRow(icon: "envelope.fill", text: "Berichten")
+                            SetttingRow(icon: Images.envelopeFilled, text: Strings.messageHeader)
                             
                         })
                         .foregroundColor(.clear)
                         
                         NavigationLink(destination: AppSettingsView(), label: {
                             
-                            SetttingRow(icon: "gear", text: "Instellingen")
+                            SetttingRow(icon: Images.gearIcon, text: Strings.settingsHeader)
                             
                         })
                         .foregroundColor(.clear)
                         
                         NavigationLink(destination: PersonalDetailsView(), label: {
                             
-                            SetttingRow(icon: "house.fill", text: "Persoonlijke details")
+                            SetttingRow(icon: Images.houseIcon, text: Strings.personalDetailHeader)
                             
                         })
                         .foregroundColor(.clear)
                         
                         NavigationLink(destination: AboutView(), label: {
                             
-                            SetttingRow(icon: "info.circle.fill", text: "Over deze app")
+                            SetttingRow(icon: Images.cirleIcon, text: Strings.aboutHeader)
                             
                         })
                         .foregroundColor(.clear)
@@ -58,7 +58,7 @@ struct SettingView: View {
                         }) {
                             HStack{
                                 Spacer()
-                                Text("Loguit")
+                                Text(Strings.logout)
                                 Spacer()
                             }
                         }
@@ -77,8 +77,8 @@ struct SettingView: View {
                 
             }
             .actionSheet(isPresented: self.$viewModel.shouldShowLogOutOptions) {
-                .init(title: Text("Profiel instellingen"), message: Text("Weet je zeker dat je wilt uitloggen?"), buttons: [
-                    .destructive(Text("Log uit"), action: {
+                .init(title: Text(Strings.popUpProfileTitle), message: Text(Strings.popUpProfileBody), buttons: [
+                    .destructive(Text(Strings.logout), action: {
                         print("Handle Sign out")
                         self.viewModel.signOutGuest()
                         
@@ -94,7 +94,7 @@ struct SettingView: View {
                         dismiss()
                         
                     }, label: {
-                        Text("Sluiten")
+                        Text(Strings.close)
                     })
                     
                 }
@@ -104,7 +104,7 @@ struct SettingView: View {
                     Button(action: {
                         self.viewModel.shouldShowLogOutOptions.toggle()
                     }, label: {
-                        Text("Loguit")
+                        Text(Strings.logout)
                     })
                     
                 }

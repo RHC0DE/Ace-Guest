@@ -9,16 +9,15 @@ import SwiftUI
 
 struct MessageCell: View {
     
-    @ObservedObject private var viewModel = MessagesViewModel()
     @EnvironmentObject private var currentAppointment: AppointmentViewModel
-
     
     var body: some View {
         
         HStack {
 
             VStack {
-                Text(self.viewModel.message?.messageTitle ?? "")
+            
+                Text(Strings.welcomeMessage)
                     .font(.system(size: 12))
                     .foregroundColor(.primary)
                     .padding()
@@ -27,7 +26,7 @@ struct MessageCell: View {
             
             Spacer()
 
-            Image(systemName: viewModel.message?.hasAttachment ?? Bool() ? "paperclip" : "")
+            Image(systemName: Images.paperclip)
                 .foregroundColor(.gray)
                 .padding(.trailing, -20)
             

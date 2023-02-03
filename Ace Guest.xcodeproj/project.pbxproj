@@ -52,6 +52,7 @@
 		315FFB04298AC60700702DDC /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFB03298AC60700702DDC /* MessagesViewModel.swift */; };
 		315FFB07298AC74900702DDC /* PersonalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFB06298AC74900702DDC /* PersonalDetailsView.swift */; };
 		315FFB09298AC79600702DDC /* PersonalDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315FFB08298AC79600702DDC /* PersonalDetailRow.swift */; };
+		318BB71C298DB0C8003CDCA5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318BB71B298DB0C8003CDCA5 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		315FFB03298AC60700702DDC /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
 		315FFB06298AC74900702DDC /* PersonalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsView.swift; sourceTree = "<group>"; };
 		315FFB08298AC79600702DDC /* PersonalDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailRow.swift; sourceTree = "<group>"; };
+		318BB71B298DB0C8003CDCA5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				315FFABE298A87BE00702DDC /* FormSpacer.swift */,
 				315FFAC2298A883B00702DDC /* GrayedOutButtonLabel.swift */,
 				315FFAC0298A87F200702DDC /* PrimaryButtonStyle.swift */,
+				318BB71B298DB0C8003CDCA5 /* LoadingView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				315FFAB5298A7EA400702DDC /* Images.swift in Sources */,
 				315FFAF8298AC51A00702DDC /* AboutView.swift in Sources */,
 				315FFAE6298AB0E200702DDC /* TermsAndConditionsView.swift in Sources */,
+				318BB71C298DB0C8003CDCA5 /* LoadingView.swift in Sources */,
 				315FFAD0298AA90200702DDC /* FirebaseManager.swift in Sources */,
 				315FFAE2298AB08F00702DDC /* OnBoardingContentView.swift in Sources */,
 				315FFAC9298A8CDE00702DDC /* Appointment.swift in Sources */,

@@ -13,7 +13,7 @@ class OnBoardingViewModel: ObservableObject {
     @Published var onBoardingItem: OnBoarding?
     @Published var showOnBoardingView: Bool = false
     @Published var onBoardingSteps: [OnBoarding] = [
-        OnBoarding(title: Strings.bluethoothOnBoardingTitle, currentStep: 0),
+        OnBoarding(title: Strings.nfcOnBoardingTitle, currentStep: 0),
         OnBoarding(title: Strings.notificationOnBoardingTitle, currentStep: 1)
     ]
     @Published var currentStep = 0

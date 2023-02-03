@@ -15,19 +15,19 @@ struct AppSettingsView: View {
             
             Section {
                 
-                Text("App instellingen")
+                Text(Strings.appSettingsHeaderText)
                     .font(.system(size: 18))
                     .fontWeight(.bold)
                     .padding()
                 
                 HStack {
-                    Image(systemName: "bell.fill")
+                    Image(systemName: Images.bell)
                         .resizable()
                         .frame(width: 20, height: 20)
                         .foregroundColor(Color(Colors.systemRed))
                     
                     
-                    Text("Push notificaties")
+                    Text(Strings.pushNotifications)
                         .foregroundColor(.primary)
                     
                     Spacer ()
@@ -38,13 +38,13 @@ struct AppSettingsView: View {
                 }
                 
                 HStack {
-                    Image(systemName: "character.bubble.fill")
+                    Image(systemName: Images.bubbleFill)
                         .resizable()
                         .frame(width: 20, height: 20)
                         .foregroundColor(Color(Colors.systemRed))
                     
                     
-                    Text("coupons.doc")
+                    Text(Strings.couponDocText)
                         .foregroundColor(.primary)
                         .padding()
                     
@@ -56,12 +56,12 @@ struct AppSettingsView: View {
                     }, label: {
                         
                         HStack {
-                            Text("English")
+                            Text(Strings.englishHeader)
                                 .font(.system(size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(.primary)
                             
-                            Image(systemName: "chevron.right")
+                            Image(systemName: Images.chevronRight)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 15, height: 15)

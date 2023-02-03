@@ -17,9 +17,7 @@ class MessagesViewModel : ObservableObject {
     @Published var message : Message?
     
     @Published var statusMessage = ""
-    
-    //    @Published var guestAppointment: Appointment?
-    
+        
     init() {
         fetchMessage()
         fetchMessages()
@@ -51,11 +49,10 @@ class MessagesViewModel : ObservableObject {
                 
                 let uid = data["id"] as? String ?? ""
                 let messageTitle = data["messageTitle"] as? String ?? ""
-                let messageBody = data["messageBody"] as? String ?? ""
                 let messageSendByUser = data["messageSendByUser"] as? String ?? ""
                 let hasAttachment = data["hasAttachment"] as? Bool ?? Bool()
                 let dateMessageEvent = (data["dateMessageEvent"] as? Timestamp)?.dateValue() ?? Date()
-                self.message = Message(id: uid, messageTitle: messageTitle, messageBody: messageBody, messageSendByUser: messageSendByUser, hasAttachment: hasAttachment, dateMessageEvent: dateMessageEvent)
+                self.message = Message(id: uid, messageTitle: messageTitle, messageSendByUser: messageSendByUser, hasAttachment: hasAttachment, dateMessageEvent: dateMessageEvent)
                 
             }
         
@@ -76,12 +73,11 @@ class MessagesViewModel : ObservableObject {
                     let data = document.data()
                     let uid = data["id"] as? String ?? ""
                     let messageTitle = data["messageTitle"] as? String ?? ""
-                    let messageBody = data["messageBody"] as? String ?? ""
                     let messageSendByUser = data["messageSendByUser"] as? String ?? ""
                     let hasAttachment = data["hasAttachment"] as? Bool ?? Bool()
                     let dateMessageEvent = (data["dateMessageEvent"] as? Timestamp)?.dateValue() ?? Date()
                     
-                    let message = Message(id: uid, messageTitle: messageTitle, messageBody: messageBody, messageSendByUser: messageSendByUser, hasAttachment: hasAttachment, dateMessageEvent: dateMessageEvent)
+                    let message = Message(id: uid, messageTitle: messageTitle, messageSendByUser: messageSendByUser, hasAttachment: hasAttachment, dateMessageEvent: dateMessageEvent)
                     self.messages.append(message)
                 }
                 

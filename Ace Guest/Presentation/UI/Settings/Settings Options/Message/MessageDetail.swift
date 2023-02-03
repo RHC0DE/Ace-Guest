@@ -19,12 +19,11 @@ struct MessageDetail: View {
                 Text(self.message?.messageTitle ?? "")
                     .font(.body)
                 
-                
             }
             
             Section {
                 HStack {
-                    Text("Ace")
+                    Text(Strings.aceMessageHeaderText)
                         .font(.system(size: 18))
                         .fontWeight(.bold)
                     
@@ -33,7 +32,6 @@ struct MessageDetail: View {
                     Text(self.currentAppointment.guestAppointment?.appointmentMessageString ?? "")
                         .font(.system(size: 15))
                         .foregroundColor(.gray)
-                    
                     
                 }
                 
@@ -47,14 +45,13 @@ struct MessageDetail: View {
                             .padding()
                             .padding(.leading, -15)
                         
-                        // Text(message?.messageBody ?? "")   DE ALIGNMENT IS NIET CORRECT, LATER UITZOEKEN
-                        Text("De medewerker is op de hoogte gesteld van uw aankomst en komt er zo snel mogelijk aan. In de tussentijd kunt u de link in de bijlage bekijken indien er interesse is in een hapje of drankje. \n\nEen fijne dag verder toegewenst en bedankt voor het gebruik van de Club Ace Guest app! \n\nMet vriendelijke groet, \n\nThe Ace Family")
+                        Text(Strings.messageBody)
                             .font(.system(size: 12))
                             .padding()
                             .padding(.leading, -15)
                             .padding(.top, -15)
                         
-                        Image("bottem_icon")
+                        Image(Images.ace_message_icon)
                             .resizable()
                             .scaledToFit()
                             .frame(width: 100, height: 100)
@@ -68,23 +65,23 @@ struct MessageDetail: View {
             Section {
                 
                 HStack {
-                    Text("Bijlage")
+                    Text(Strings.attachment)
                         .font(.system(size: 18))
                         .fontWeight(.bold)
                     
                     Spacer()
                 }
                             
-                Link(destination: URL(string: "https://docs.google.com/document/d/18-Ly8AFdIwZwlZMZKNf7z_SDYx7zAuIagTvVCV0BV1o/edit?usp=sharing")!) {
+                Link(destination: URL(string: Strings.attechmentLink)!) {
                     
                     HStack {
-                        Image(systemName: "paperclip")
+                        Image(systemName: Images.paperclip)
                             .resizable()
                             .frame(width: 20, height: 20)
                             .foregroundColor(Color(Colors.systemRed))
                         
                         
-                        Text("coupons.doc")
+                        Text(Strings.couponText)
                             .foregroundColor(.primary)
                         
                         Spacer ()

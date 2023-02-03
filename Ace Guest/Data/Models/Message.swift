@@ -8,7 +8,6 @@ struct Message: Identifiable {
     
     var id: String
     var messageTitle: String
-    var messageBody: String
     var messageSendByUser: String
     var hasAttachment: Bool
     

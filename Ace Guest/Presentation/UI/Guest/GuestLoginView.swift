@@ -77,15 +77,14 @@ struct GuestLoginView: View {
                     .shadow(color: Color.black.opacity(0.05), radius: 5, x: -5, y: -5)
                     .padding(.top, -10)
            
-                
                 Text(viewModel.accessCodeErrorMessage)
                     .foregroundColor(.red)
                     .padding(.top, -30)
                 
                 // Register button
                 Button(action: {
-                    viewModel.invalidAttemptsToLogin()
                     viewModel.loginGuest()
+                    viewModel.invalidAttemptsToLogin()
                 }) {
                     
                     Text(Strings.register)
@@ -147,7 +146,10 @@ struct GuestLoginView: View {
         .alert(isPresented: $viewModel.showMaxAttemptsReachedAlert) { () -> Alert in
             Alert(title: Text(Strings.alertFailedAccessTitle), message: Text(Strings.alertFailedAccessBody), dismissButton: .default(Text(Strings.ok)))
             
-        }    }
+        }
+        
+    }
+    
 }
 
 struct GuestLoginView_Previews: PreviewProvider {

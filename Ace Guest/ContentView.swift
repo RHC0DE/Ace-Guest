@@ -2,7 +2,6 @@
 //  Ace Guest
 //
 
-
 import SwiftUI
 
 struct ContentView: View {

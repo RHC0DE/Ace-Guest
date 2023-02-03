@@ -17,15 +17,15 @@ struct PersonalDetailsView: View {
             Form {
                 
                 Section {
-                    Text("Persoonlijke details")
+                    Text(Strings.personalDetailsHeader)
                         .font(.system(size: 18))
                         .fontWeight(.bold)
                         .padding(.leading)
                         .padding()
                     
-                    PersonalDetailRow(headText: "Email address", subText: "\(viewModel.guestAppointment?.email ?? "")", icon: "envelope.fill")
-                    PersonalDetailRow(headText: "Start datum/tijd", subText: "\(viewModel.guestAppointment?.startDateString ?? "")", icon: "calendar.badge.clock")
-                    PersonalDetailRow(headText: "Eind datum/tijd", subText: "\(viewModel.guestAppointment?.endDateString ?? "")", icon: "calendar.badge.exclamationmark")
+                    PersonalDetailRow(headText: Strings.emailAdress, subText: "\(viewModel.guestAppointment?.email ?? "")", icon: Images.envelopeFilled)
+                    PersonalDetailRow(headText: Strings.startDateAndTime, subText: "\(viewModel.guestAppointment?.startDateString ?? "")", icon: Images.calendarClock)
+                    PersonalDetailRow(headText: Strings.endDateAndTime, subText: "\(viewModel.guestAppointment?.endDateString ?? "")", icon: Images.calendarExclamationmark)
                 }
 
             }

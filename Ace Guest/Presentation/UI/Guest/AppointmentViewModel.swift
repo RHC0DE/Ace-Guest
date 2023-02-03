@@ -1,7 +1,6 @@
 //
 //  Ace Guest
 //
-//
 
 import Combine
 import Firebase
@@ -11,7 +10,6 @@ import Foundation
 import SwiftUI
 
 enum RegisterGuest {
-    case notSixCharacters
     case empty
     case valid
     case invalid
@@ -38,7 +36,7 @@ class AppointmentViewModel: ObservableObject {
     // Login booleans
     @Published var isValid = false
     @Published var invalidAttempts = 0
-    @Published var showMaxAttemptsReachedAlert = false
+    @Published var showInvalidLoginAlert = false
     @Published var isDisabled = false
     @Published var accessPasIsRegistered = false
     @Published var shouldShowLogOutOptions = false
@@ -100,8 +98,8 @@ class AppointmentViewModel: ObservableObject {
         self.$accessCode
             .debounce(for: 0.8, scheduler: RunLoop.main)
             .removeDuplicates()
-            .map { password in
-                return password == ""
+            .map { accessCode in
+                return accessCode == ""
             }
             .eraseToAnyPublisher()
     }
@@ -141,14 +139,14 @@ class AppointmentViewModel: ObservableObject {
         
         Publishers.CombineLatest(isAccessCodeSixCharacterPublisher, isAccessCodeEmptyPublisher)
         
-            .map { passwordIsEmpty, accessCodeSixCharacter in
+            .map { accessCodeSixCharacter, passwordIsEmpty  in
                 
-                if(passwordIsEmpty) {
-                    return .empty
+                if(accessCodeSixCharacter) {
+                    return .invalid
                 }
                 
-                else if (accessCodeSixCharacter) {
-                    return .notSixCharacters
+                else if (passwordIsEmpty) {
+                    return .empty
                 }
                 
                 else {
@@ -200,7 +198,7 @@ class AppointmentViewModel: ObservableObject {
                 switch passwordCheck {
                 case .empty:
                     return "Access code can't be empty"
-                case .notSixCharacters:
+                case .invalid:
                     return "access code has to be six characters"
                 default:
                     return ""
@@ -262,7 +260,7 @@ class AppointmentViewModel: ObservableObject {
             if let error = error {
                 print("Failed to login user: \(error)")
                 self.appointmentStatusMessage = "Failed to login! Please enter the correct email/password..."
-                
+
             return
                 
             }
@@ -319,7 +317,7 @@ class AppointmentViewModel: ObservableObject {
         self.accessCode = newPassword
         
     }
-    
+        
     func invalidAttemptsToLogin() {
         let attempt = 1
         let maxAttempt = 4
