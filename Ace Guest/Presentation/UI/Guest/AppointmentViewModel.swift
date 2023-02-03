@@ -36,7 +36,7 @@ class AppointmentViewModel: ObservableObject {
     // Login booleans
     @Published var isValid = false
     @Published var invalidAttempts = 0
-    @Published var showInvalidLoginAlert = false
+    @Published var showMaxAttemptsReachedAlert = false
     @Published var isDisabled = false
     @Published var accessPasIsRegistered = false
     @Published var shouldShowLogOutOptions = false
