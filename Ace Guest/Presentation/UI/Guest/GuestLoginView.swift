@@ -14,6 +14,7 @@ struct GuestLoginView: View {
     var body: some View {
         VStack{
             
+            
             AceLogo()
             
             VStack(spacing:20) {

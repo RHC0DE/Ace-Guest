@@ -126,7 +126,7 @@ class AppointmentViewModel: ObservableObject {
     }
     
     private var isAccessCodeSixCharacterPublisher: AnyPublisher<Bool, Never> {
-        $accessCode
+        self.$accessCode
             .debounce(for: 0.8, scheduler: RunLoop.main)
             .removeDuplicates()
             .map { accessCodeInput in
@@ -141,12 +141,12 @@ class AppointmentViewModel: ObservableObject {
         
             .map { accessCodeSixCharacter, passwordIsEmpty  in
                 
-                if(accessCodeSixCharacter) {
-                    return .invalid
+                if(passwordIsEmpty) {
+                    return .empty
                 }
                 
-                else if (passwordIsEmpty) {
-                    return .empty
+                else if (accessCodeSixCharacter) {
+                    return .invalid
                 }
                 
                 else {
@@ -169,9 +169,7 @@ class AppointmentViewModel: ObservableObject {
     // MARK: - Constructors
     
     init() {
-              
-        fetchCurrentAppointment()
-        
+                              
         isEmailValidPublisher
             .dropFirst()
             .receive(on: RunLoop.main)
@@ -225,7 +223,7 @@ class AppointmentViewModel: ObservableObject {
             self.appointmentStatusMessage = "Loading data of current user.....!"
             return
         }
-        
+
         FirebaseManager.shared.fireStore.collection("Appointments")
             .document(uid).getDocument { snapshot, error in
                 if let error = error {
@@ -242,13 +240,13 @@ class AppointmentViewModel: ObservableObject {
                 }
 
                 self.appointmentStatusMessage = "Data: \(data.description)"
-                
+
                 let uid = data["uid"] as? String ?? ""
                 let startDate = (data["startDate"] as? Timestamp)?.dateValue() ?? Date()
                 let endDate = (data["endDate"] as? Timestamp)?.dateValue() ?? Date()
                 let email = data["email"] as? String ?? ""
                 let accessCode = data["accessCode"] as? String ?? ""
-                
+
                 self.guestAppointment = Appointment(uid: uid, startDate: startDate, endDate: endDate, email: email, accessCode: accessCode)
             }
         
@@ -306,7 +304,7 @@ class AppointmentViewModel: ObservableObject {
     // MARK: - Functions
     
     func createPassword() {
-        let numbers = "123456790"
+        let numbers = Strings.oneToTen
         var newPassword = ""
         
         for _ in 0..<accessCodelength {

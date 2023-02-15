@@ -7,7 +7,7 @@ import Firebase
 import FirebaseStorage
 import FirebaseFirestore
 
-class FirebaseManager: NSObject {
+class FirebaseManager: NSObject { 
     
     let auth: Auth
     let storage: Storage
@@ -22,5 +22,7 @@ class FirebaseManager: NSObject {
         self.fireStore = Firestore.firestore()
         
         super.init()
+        
     }
+    
 }
