@@ -32,6 +32,7 @@ class AppointmentViewModel: ObservableObject {
     @Published var accessCode = ""
     @Published var accessCodelength = 6
     @Published var accessCodeErrorMessage = ""
+    let pasteboard = UIPasteboard.general
     
     // Login booleans
     @Published var isValid = false
@@ -341,4 +342,7 @@ class AppointmentViewModel: ObservableObject {
         }
     }
 
+    func copyToClipBoard() {
+        pasteboard.string = self.accessCode
+    }
 }

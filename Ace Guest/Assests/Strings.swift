@@ -15,11 +15,20 @@ struct Strings {
     static let alertFailedAccessTitle = "Failed access pass registration"
     static let alertFailedAccessBody = "The Access is temporarily disabled due to many failed login attempts. Please try again in 5 minutes or consult the reception"
     static let alertFailedLoginBody = "The entered access code is not correct, please check"
-    static let ok = "Ok"
     
     // MARK: - Register Page
+    static let startAndEndTime = "Start / End time"
+    static let startDate = "Start Date"
+    static let endDate = "End Date"
+    static let eMailGuest = "E-mail guest"
+    static let generateAccesscode = "Generate access code"
+    static let registerGuest = "Register guest"
+    static let guestRegistered = "Guest registered!"
+    static let hassAccessFrom = "has access to Club Ace from"
+    static let till = "till"
+    static let clubAceRegistration = "Club Ace Guest Registration"
     static let contactRegister = "\nPlease contact the reception for registration changes"
-    static let linkMail = "hello@thisisace.nl"
+    static let linkMail = "mailto:hello@thisisace.nl"
     
     // MARK: - Landing Page
     static let landingTitle = "Welcome \nto Club Ace!"
@@ -98,6 +107,9 @@ struct Strings {
     static let deviceToken = "dqtVN2oRo0wPgr61TLGt7q:APA91bF2rkArdF9cVrvDHZfjkb6t1-dUPGqd0M3_q4B0ptCpFKZ4b9Q1PjctSBBRD_-YQr5rRPiQA_djrsyVaPZt4Rb7WAk7cWTRHaOhGdEufmv7ewYCFxIB2SXB2TGOnCGuOXsFUtbg"
      
     // MARK: - Remainings
+    static let accessCode = "Access code"
+    static let mail = "Mail"
+    static let ok = "OK"
     static let dismiss = "Annuleer"
     static let oneToTen = "123456790"
     static let eMailValidatorRegEx = NSPredicate(format: "SELF MATCHES %@", "(?:[\\p{L}0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[\\p{L}0-9!#$%\\&'*+/=?\\^_`{|}" +

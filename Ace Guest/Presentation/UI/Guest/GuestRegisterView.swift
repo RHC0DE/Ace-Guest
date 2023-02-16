@@ -17,32 +17,32 @@ struct GuestRegisterView: View {
             
             Form {
                 
-                Section( header: Text("Start / Eind tijd"), footer: Text("")) {
-                    DatePicker("Start Datum", selection: $viewModel.startDate, in: Date()...)
+                Section( header: Text(Strings.startAndEndTime), footer: Text("")) {
+                    DatePicker(Strings.startDate, selection: $viewModel.startDate, in: Date()...)
                         .accentColor(.red)
                         .foregroundColor(.red)
-                    DatePicker("Eind Datum", selection: $viewModel.endDate, in: viewModel.startDate...)
+                    DatePicker(Strings.endDate, selection: $viewModel.endDate, in: viewModel.startDate...)
                         .accentColor(.red)
                         .foregroundColor(.red)
                     
                 }
                 
-                Section (header:Text("Mail"),
+                Section (header:Text(Strings.mail),
                          footer: Text("\(viewModel.emailErrorMessage)").foregroundColor(.red)){
-                    TextField("E-mail guest", text: $viewModel.email)
+                    TextField(Strings.eMailGuest, text: $viewModel.email)
                 }
                 
-                Section(header:Text("Access code"),
+                Section(header:Text(Strings.accessCode),
                         footer:Text("\(viewModel.accessCodeErrorMessage)").foregroundColor(.red)) {
                     
                     Button(action: {
                         viewModel.createPassword()
-                        print(viewModel.accessCode)
+                        print("The generated accesscode is: ", viewModel.accessCode)
                     }) {
                         HStack {
-                            Text("Generate access code")
+                            Text(Strings.generateAccesscode)
                             Spacer()
-                            Image(systemName: "arrow.triangle.2.circlepath")
+                            Image(systemName: Images.arrowCircle)
                                 .foregroundColor(.red)
                         }
                     }
@@ -51,7 +51,13 @@ struct GuestRegisterView: View {
                         Text("\(viewModel.accessCode)")
                             .textSelection(.enabled)
                         Spacer()
-                        Image(systemName: "lock")
+                        Button(action: {
+                            viewModel.copyToClipBoard()
+                        }, label: {
+                            Image(systemName: Images.docFill)
+                                .foregroundColor(.blue)
+                        })
+                        Image(systemName: Images.lock)
                             .foregroundColor(.green)
                     }
                     
@@ -79,19 +85,19 @@ struct GuestRegisterView: View {
                             }) {
                                 HStack {
                                     Spacer()
-                                    Text("Register guest")
+                                    Text(Strings.registerGuest)
                                     Spacer()
                                 }
                             }
                             .disabled(!viewModel.isValid)
                             .foregroundColor(.white)
                             .padding(10)
-                            .background(!viewModel.isValid ? .gray : Color(Colors.systemRed ))
+                            .background(!viewModel.isValid ? .gray : Color(Colors.systemRed))
                             .cornerRadius(8)
                             .alert(isPresented: $viewModel.shouldShowSuccesRegisterAlert) {
-                                Alert(title: Text("Gast geregistreerd!"),
-                                      message: Text("\(viewModel.email) heeft toegang tot Club Ace vanaf \(viewModel.startDate, formatter: viewModel.dateFormatter) tot \(viewModel.endDate, formatter: viewModel.dateFormatter)"),
-                                      dismissButton: .default(Text("OK")))
+                                Alert(title: Text(Strings.guestRegistered),
+                                      message: Text("\(viewModel.email) \(Strings.hassAccessFrom) \(viewModel.startDate, formatter: viewModel.dateFormatter) \(Strings.till) \(viewModel.endDate, formatter: viewModel.dateFormatter)"),
+                                      dismissButton: .default(Text(Strings.ok)))
                                 
                             }
                             /*
@@ -102,7 +108,7 @@ struct GuestRegisterView: View {
                             
                         }
                         .listRowBackground(Color.clear)
-                        .navigationTitle("Club Ace Guest Registration")
+                        .navigationTitle(Strings.clubAceRegistration)
                         .navigationBarTitleDisplayMode(.inline)
                 
             }

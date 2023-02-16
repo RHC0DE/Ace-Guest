@@ -28,10 +28,10 @@ struct GuestLoginView: View {
                 // Mail inputField
                 HStack(spacing: 15) {
                     
-                    Image(systemName: "envelope")
+                    Image(systemName: Images.envelope)
                         .foregroundColor(Color(Colors.systemRed))
                     
-                    TextField("Mail", text: self.$viewModel.email)
+                    TextField(Strings.mail, text: self.$viewModel.email)
                         .keyboardType(.emailAddress)
                         .foregroundColor(.primary)
                     
@@ -56,10 +56,10 @@ struct GuestLoginView: View {
                 // Accesscode inputField
                     HStack(spacing: 15) {
                         
-                        Image(systemName: "lock.open")
+                        Image(systemName: Images.lockOpen)
                             .foregroundColor(.green)
                         
-                        SecureField("Toegangscode", text: self.$viewModel.accessCode)
+                        SecureField(Strings.accessCode, text: self.$viewModel.accessCode)
                             .keyboardType(.numberPad)
                             .foregroundColor(.primary)
                         

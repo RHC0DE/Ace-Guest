@@ -14,7 +14,7 @@ struct ContentView: View {
              CardView()
 
         } else {
-            GuestLoginView()
+            GuestRegisterView()
 
         }
         

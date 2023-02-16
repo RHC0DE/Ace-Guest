@@ -23,4 +23,9 @@ struct Images {
     static var gearIcon = "gear"
     static var houseIcon = "house.fill"
     static var cirleIcon = "info.circle.fill"
+    static var docFill = "doc.on.doc"
+    static var envelope = "envelope"
+    static var lockOpen = "lock.open"
+    static var lock = "lock"
+    static var arrowCircle = "arrow.triangle.2.circlepath"
 }
