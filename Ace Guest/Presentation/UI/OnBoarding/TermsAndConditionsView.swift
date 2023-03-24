@@ -123,7 +123,6 @@ struct TermsAndConditionsView: View {
                             .bold()
                             .frame(width: 210, height: 50)
                             .background(Color(Colors.systemRed))
-
                             .clipShape(Capsule())
                         
                     })

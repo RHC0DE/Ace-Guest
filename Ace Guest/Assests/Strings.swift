@@ -36,8 +36,10 @@ struct Strings {
     static let letsGo = "Let's go!"
     
     // MARK: - OnBoarding Page
-    static let notificationOnBoardingTitle = "When entering the Club Ace office, important messages are sent, such as the status updates of your current appointment!"
-    static let nfcOnBoardingTitle = "NFC is used to open the doors of the Club Ace office!"
+    static let notificationOnBoardingTitle = "How do we communicate?"
+    static let notificationOnBoardingSubTitle = "When entering the Club Ace office, important notifications are sent, such as the status updates of your current appointment!"
+    static let nfcOnBoardingTitle = "How to get access in the Club Ace office?"
+    static let nfcOnBoardingSubTitle = "In order to open the frontdoor the app is using NFC to scan the HID reader!"
     static let next = "Next"
     static let getStarted = "Get started"
     static let accepted = "Accept"

@@ -24,9 +24,8 @@ struct GuestRegisterView: View {
                     DatePicker(Strings.endDate, selection: $viewModel.endDate, in: viewModel.startDate...)
                         .accentColor(.red)
                         .foregroundColor(.red)
-                    
+                     
                 }
-                
                 Section (header:Text(Strings.mail),
                          footer: Text("\(viewModel.emailErrorMessage)").foregroundColor(.red)){
                     TextField(Strings.eMailGuest, text: $viewModel.email)

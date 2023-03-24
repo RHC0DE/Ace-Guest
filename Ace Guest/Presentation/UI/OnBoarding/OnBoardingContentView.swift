@@ -10,7 +10,9 @@ import SwiftUI
 struct OnBoardingContentView: View {
     
     @ObservedObject var viewmodel =  OnBoardingViewModel()
-    @State  var title : String
+    @State var title : String
+    @State var subTitle : String
+    @State var image : String
     @State  var selectedPage : Int
 
     var body: some View {
@@ -21,7 +23,7 @@ struct OnBoardingContentView: View {
                 
                 HStack {
                     
-                    ForEach(0..<viewmodel.onBoardingSteps.count, id: \.self) { currentPage in
+                    ForEach(0..<viewmodel.onBoardingPages.count, id: \.self) { currentPage in
                         if currentPage == self.selectedPage {
                             Rectangle()
                                 .frame(width: 20, height: 10)
@@ -53,6 +55,18 @@ struct OnBoardingContentView: View {
                 }
                 .padding(.top, 100)
                 
+                HStack {
+                    
+                    Text(subTitle)
+                        .font(.system(size: 18))
+                        .foregroundColor(.gray)
+                        .padding()
+                }
+                .padding(.trailing, 30)
+                .padding(.top, -30)
+                
+                Image(image)
+                
                 Spacer()
                 
             }
@@ -64,7 +78,7 @@ struct OnBoardingContentView: View {
 
 struct OnBoardingContentView_Previews: PreviewProvider {
     static var previews: some View {
-        OnBoardingContentView(title: "We want to use your camera services for scanning barcodes to cash in your Ace vouchers.", selectedPage: 0)
+        OnBoardingContentView(title: Strings.nfcOnBoardingTitle, subTitle: "In order to open the frontdoor the app is using NFC to scan the HID reader!", image: String(Images.onBoardingNFC), selectedPage: 0)
         
     }
 }

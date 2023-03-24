@@ -5,7 +5,6 @@
 import Foundation
 import UserNotifications
 
-
 /**
  Creates an In App Notification
  */
@@ -47,7 +46,7 @@ class NotificationManager {
      */
     func sendMessageTouser(to token: String, title: String, body: String) {
            print("sendMessageTouser()")
-        let urlString = Strings.URL
+           let urlString = Strings.URL
            let url = NSURL(string: urlString)!
            let paramString: [String : Any] = ["to" : token,
                                               "notification" : ["title" : title, "body" : body],

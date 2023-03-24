@@ -14,7 +14,6 @@ struct GuestLoginView: View {
     var body: some View {
         VStack{
             
-            
             AceLogo()
             
             VStack(spacing:20) {
@@ -49,7 +48,7 @@ struct GuestLoginView: View {
                 .shadow(color: Color.black.opacity(0.05), radius: 5, x: -5, y: -5)
                 .padding(.vertical)
                 
-                Text(viewModel.emailErrorMessage)
+                Text(self.viewModel.emailErrorMessage)
                     .foregroundColor(.red)
                     .padding(.top, -30)
                 
@@ -78,28 +77,28 @@ struct GuestLoginView: View {
                     .shadow(color: Color.black.opacity(0.05), radius: 5, x: -5, y: -5)
                     .padding(.top, -10)
            
-                Text(viewModel.accessCodeErrorMessage)
+                Text(self.viewModel.accessCodeErrorMessage)
                     .foregroundColor(.red)
                     .padding(.top, -30)
                 
                 // Register button
                 Button(action: {
-                    viewModel.loginGuest()
-                    viewModel.invalidAttemptsToLogin()
+                    self.viewModel.loginGuest()
+                    self.viewModel.invalidAttemptsToLogin()
                 }) {
                     
                     Text(Strings.register)
                         .foregroundColor(.white)
                         .bold()
                         .frame(width: 210, height: 50)
-                        .background(!viewModel.isValid ? .gray : Color(Colors.systemRed ))
+                        .background(!self.viewModel.isValid || self.viewModel.isDisabled ? .gray : Color(Colors.systemRed ))
                         .clipShape(Capsule())
                     
                 }
-                .disabled(!viewModel.isValid)
+                .disabled(!self.viewModel.isValid)
                 .padding(.bottom, 50)
-                .onReceive(viewModel.timer) { (_) in
-                    viewModel.loginTimeout()
+                .onReceive(self.viewModel.timer) { (_) in
+                    self.viewModel.loginTimeout()
                 }
                 
             }
@@ -133,18 +132,22 @@ struct GuestLoginView: View {
             
         }
         .background()
+        .overlay(content: {
+            LoadingView(show: self.$viewModel.isLoading)
+        })
         .onAppear {
             Auth.auth().addStateDidChangeListener { auth, user in
 
                 if user != nil {
-                    viewModel.accessPasIsRegistered = true
-                    viewModel.fetchCurrentAppointment()
+                    self.viewModel.accessPasIsRegistered = true
+                    self.viewModel.fetchCurrentAppointment()
                 }
-                print("The status of the accespass is: \(self.viewModel.accessPasIsRegistered)")
+                print("The status of the accespass is: ----> \(self.viewModel.accessPasIsRegistered)  <----")
 
             }
         }
-        .alert(isPresented: $viewModel.showMaxAttemptsReachedAlert) { () -> Alert in
+        .alert(self.viewModel.errorMessage, isPresented: self.$viewModel.showLoginError, actions: {})
+        .alert(isPresented: self.$viewModel.showMaxAttemptsReachedAlert) { () -> Alert in
             Alert(title: Text(Strings.alertFailedAccessTitle), message: Text(Strings.alertFailedAccessBody), dismissButton: .default(Text(Strings.ok)))
             
         }

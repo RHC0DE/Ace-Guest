@@ -38,9 +38,12 @@ class AppointmentViewModel: ObservableObject {
     @Published var isValid = false
     @Published var invalidAttempts = 0
     @Published var showMaxAttemptsReachedAlert = false
+    @Published var showLoginError = false
+    @Published var errorMessage =  ""
     @Published var isDisabled = false
     @Published var accessPasIsRegistered = false
     @Published var shouldShowLogOutOptions = false
+    @Published var isLoading = false
     
     // Login timer
     @Published var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -177,10 +180,10 @@ class AppointmentViewModel: ObservableObject {
             .map { emailCheck in
                 switch emailCheck {
                 case .empty:
-                    return "E-mail can't be empty"
+                    return "Please enter your E-mail."
                     
                 case .invalid:
-                    return "E-mail is not valid"
+                    return "Please enter a valid E-mail."
                     
                 default:
                     return ""
@@ -196,9 +199,9 @@ class AppointmentViewModel: ObservableObject {
             .map { passwordCheck in
                 switch passwordCheck {
                 case .empty:
-                    return "Access code can't be empty"
+                    return "Please enter your Ace access code."
                 case .invalid:
-                    return "access code has to be six characters"
+                    return "The Ace access code has to be six characters."
                 default:
                     return ""
                 }
@@ -254,25 +257,35 @@ class AppointmentViewModel: ObservableObject {
     }
     
     func loginGuest() {
-        Auth.auth().signIn(withEmail: email, password: accessCode) { result, error in
-
-            if let error = error {
-                print("Failed to login user: \(error)")
-                self.appointmentStatusMessage = "Failed to login! Please enter the correct email/password..."
-
-            return
-                
+        self.isLoading = true
+        Task {
+            do {
+                try await Auth.auth().signIn(withEmail: self.email, password: self.accessCode)
+                print("Failed to login!")
+            }catch {
+                await setError(error)
             }
-                        
-            print("Succesfully logged in as user: \(result?.user.uid ?? "")")
         }
-        
+//        Auth.auth().signIn(withEmail: email, password: accessCode) { result, error in
+//
+//            if let error = error {
+//                print("Failed to login user: \(error)")
+//                self.appointmentStatusMessage = "Failed to login! Please enter the correct email/password..."
+//
+//            return
+//
+//            }
+//
+//            print("Succesfully logged in as user: \(result?.user.uid ?? "")")
+//        }
     }
     
     func signOutGuest() {
+        self.isLoading = false
         try? Auth.auth().signOut()
-
         self.accessPasIsRegistered = false
+        self.email = ""
+        self.accessCode = ""
         print("Succesfully logged out the current user")
 
     }
@@ -286,6 +299,7 @@ class AppointmentViewModel: ObservableObject {
             
             self.addAppointmentData()
         }
+        
     }
     
     func addAppointmentData() {
@@ -304,7 +318,7 @@ class AppointmentViewModel: ObservableObject {
 
     // MARK: - Functions
     
-    func createPassword() {
+    func createPassword() { 
         let numbers = Strings.oneToTen
         var newPassword = ""
         
@@ -340,6 +354,15 @@ class AppointmentViewModel: ObservableObject {
                 self.isDisabled.toggle()
             }
         }
+    }
+    
+    func setError(_ error: Error)async {
+        await MainActor.run(body: {
+            self.errorMessage = error.localizedDescription
+            self.showLoginError.toggle()
+            self.isLoading = false
+        })
+        
     }
 
     func copyToClipBoard() {

@@ -21,11 +21,14 @@ struct OnBoardingContainerView: View {
                 
                 VStack {
                     
-                    TabView(selection: self.$viewmodel.currentStep) {
+                    TabView(selection: self.$viewmodel.currentPage) {
                         
-                        ForEach(0..<viewmodel.onBoardingSteps.count, id: \.self) { index in
+                        ForEach(0..<viewmodel.onBoardingPages.count, id: \.self) { index in
                                                         
-                            OnBoardingContentView(title: viewmodel.onBoardingSteps[index].title, selectedPage: viewmodel.onBoardingSteps[index].currentStep)
+                            OnBoardingContentView(title: viewmodel.onBoardingPages[index].title,
+                                                  subTitle:viewmodel.onBoardingPages[index].subTitle,
+                                                  image: viewmodel.onBoardingPages[index].image,
+                                                  selectedPage: viewmodel.onBoardingPages[index].currentPage)
                             
                         }
                         
@@ -37,8 +40,8 @@ struct OnBoardingContainerView: View {
                         Button(action: {
                             
                             withAnimation {
-                                if self.viewmodel.currentStep < viewmodel.onBoardingSteps.count - 1 {
-                                    self.viewmodel.currentStep += 1
+                                if self.viewmodel.currentPage < viewmodel.onBoardingPages.count - 1 {
+                                    self.viewmodel.currentPage += 1
                                 } else {
                                     isOnBoaring = false
 
@@ -49,7 +52,7 @@ struct OnBoardingContainerView: View {
                             
                         }, label: {
                             
-                            if self.viewmodel.currentStep < viewmodel.onBoardingSteps.count - 1{
+                            if self.viewmodel.currentPage < viewmodel.onBoardingPages.count - 1{
                                 ButtonLabel(btnTitle: Strings.next)
                                 
                             } else {

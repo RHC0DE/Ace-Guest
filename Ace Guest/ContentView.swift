@@ -14,12 +14,12 @@ struct ContentView: View {
              CardView()
 
         } else {
-            GuestRegisterView()
+            GuestLoginView()
 
         }
         
     }
-    
+     
 }
 
 //struct ContentView_Previews: PreviewProvider {

@@ -8,8 +8,8 @@ import SwiftUI
 import CoreNFC
 
 class NFCReaderManager : NSObject, ObservableObject, NFCNDEFReaderSessionDelegate {
-    
-    @ObservedObject var viewModel =  AppointmentViewModel()
+
+    @ObservedObject var viewModel = AppointmentViewModel()
     var accessCode = ""
     var nfcSession: NFCNDEFReaderSession?
     
@@ -87,7 +87,6 @@ class NFCReaderManager : NSObject, ObservableObject, NFCNDEFReaderSessionDelegat
                             session.alertMessage = Strings.succesfullyScannedReader
                             NotificationManager.instance.scheduleNotification()
                             NotificationManager.instance.sendMessageTouser(to: Strings.deviceToken, title: "\(self.viewModel.guestAppointment?.email ?? "") is in the Club Ace building!", body: "For the meeting of \(self.viewModel.guestAppointment?.startDateString ?? "") till \(self.viewModel.guestAppointment?.endDateString ?? "")")
-
                         }
                         session.invalidate()
                         

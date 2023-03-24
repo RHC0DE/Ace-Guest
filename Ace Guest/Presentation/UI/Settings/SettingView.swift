@@ -35,7 +35,7 @@ struct SettingView: View {
                         
                         NavigationLink(destination: PersonalDetailsView(), label: {
                             
-                            SetttingRow(icon: Images.houseIcon, text: Strings.personalDetailHeader)
+                            SetttingRow(icon: Images.personBadge, text: Strings.personalDetailHeader)
                             
                         })
                         .foregroundColor(.clear)

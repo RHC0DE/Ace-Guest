@@ -40,6 +40,7 @@ struct Ace_GuestApp: App {
         
     }
 }
+
     class AppDelegate: NSObject, UIApplicationDelegate {
         let gcmMessageIDKey = "gcm.message_id"
         
@@ -83,7 +84,7 @@ struct Ace_GuestApp: App {
         func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
             
             let deviceToken:[String: String] = ["token": fcmToken ?? ""]
-            print("Device token: ", deviceToken) // This token can be used for testing notifications on FCM
+            print("Device token: ", deviceToken)
         }
     }
     

@@ -28,4 +28,7 @@ struct Images {
     static var lockOpen = "lock.open"
     static var lock = "lock"
     static var arrowCircle = "arrow.triangle.2.circlepath"
+    static var onBoardingNFC = "onboardingNFC"
+    static var onboardingNotification = "onboardingNotification"
+    static var personBadge = "person.badge.key"
 }
