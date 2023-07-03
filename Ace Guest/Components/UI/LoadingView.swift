@@ -1,8 +1,5 @@
 //
-//  LoadingView.swift
 //  Ace Guest
-//
-//  Created by Guest User on 03/02/2023.
 //
 
 import SwiftUI

@@ -1,8 +1,5 @@
 //
-//  TermsAndConditionsView.swift
 //  Ace Guest
-//
-//  Created by Guest User on 01/02/2023.
 //
 
 import SwiftUI

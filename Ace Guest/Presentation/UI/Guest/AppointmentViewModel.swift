@@ -218,7 +218,6 @@ class AppointmentViewModel: ObservableObject {
     
     // MARK: - Firestore
     
-    
     func fetchCurrentAppointment() {
         
         guard let uid =
@@ -266,18 +265,7 @@ class AppointmentViewModel: ObservableObject {
                 await setError(error)
             }
         }
-//        Auth.auth().signIn(withEmail: email, password: accessCode) { result, error in
-//
-//            if let error = error {
-//                print("Failed to login user: \(error)")
-//                self.appointmentStatusMessage = "Failed to login! Please enter the correct email/password..."
-//
-//            return
-//
-//            }
-//
-//            print("Succesfully logged in as user: \(result?.user.uid ?? "")")
-//        }
+        
     }
     
     func signOutGuest() {

@@ -1,8 +1,5 @@
 //
-//  OnBoardingViewModel.swift
 //  Ace Guest
-//
-//  Created by Guest User on 01/02/2023.
 //
 
 import Foundation
@@ -16,6 +13,7 @@ class OnBoardingViewModel: ObservableObject {
     @Published var onBoardingPages: [OnBoarding] = [
         OnBoarding(title: Strings.nfcOnBoardingTitle,subTitle: Strings.nfcOnBoardingSubTitle, image: String(Images.onBoardingNFC), currentPage: 0),
         OnBoarding(title: Strings.notificationOnBoardingTitle, subTitle: Strings.notificationOnBoardingSubTitle, image: String(Images.onboardingNotification), currentPage: 1)
+        
     ]
     @Published var currentPage = 0
 

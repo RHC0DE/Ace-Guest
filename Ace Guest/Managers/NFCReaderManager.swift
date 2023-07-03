@@ -1,5 +1,4 @@
 //
-//  NFCReaderManager.swift
 //  Ace Guest
 //
 

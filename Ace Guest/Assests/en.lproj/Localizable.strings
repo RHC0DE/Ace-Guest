@@ -1,0 +1,91 @@
+//
+//  Ace Guest
+//
+
+// MARK: - Login Page
+"registerTitle" = "Register your access pass.";
+"register" = "Register";
+"noAccesCode" = "Didn't receive a HID Mobile Access invitation code?";
+"contact" = "Please contact reception";
+"alertFailedAccessTitle" = "Failed access pass registration";
+"alertFailedAccessBody" = "The Access is temporarily disabled due to many failed login attempts. Please try again in 5 minutes or consult the reception";
+
+// MARK: - Register Page
+"startAndEndTime" = "Start / End time";
+"startDate" = "Start Date";
+"endDate" = "End Date";
+"eMailGuest" = "E-mail guest";
+"generateAccesscode" = "Generate access code";
+"registerGuest" = "Register guest";
+"guestRegistered" = "Guest registered!";
+"hassAccessFrom" = "has access to Club Ace from";
+"till" = "till";
+"clubAceRegistration" = "Club Ace Guest Registration";
+"contactRegister" = "\nPlease contact the reception for registration changes";
+
+// MARK: - Landing Page
+"landingTitle" = "Welcome \nto Club Ace!";
+"landingBody" = "Go through this quick setup to get the most out of this app.";
+
+// MARK: - OnBoarding Page
+"notificationOnBoardingTitle" = "How do we communicate?";
+"notificationOnBoardingSubTitle" = "When entering the Club Ace office, important notifications are sent, such as the status updates of your current appointment!";
+"nfcOnBoardingTitle" = "How to get access in the Club Ace office?";
+"nfcOnBoardingSubTitle" = "In order to open the frontdoor the app is using NFC to scan the HID reader!";
+"next" = "Next";
+"accepted" = "Accept";
+
+// MARK: - CardView Page
+"accessPassTitle" = "Access pass";
+
+// MARK: - Terms And Conditions Page
+"ourConditionsTitle" = "Our conditions";
+"termsAndConditionsBody" = "Read and accept the terms before you can get started with your account.";
+"iAgreeTermsAndConditions" = "I agree with the ";
+"termsAndConditions" = "Terms and Conditions";
+"iAgreePrivacyPolicy" = "I agree to it ";
+"privacyPolicy" = "privacy policy";
+"errorMessageTermsAndConditions" = "You must accept both the terms and conditions and the privacy policy to continue.";
+
+// MARK: -  Settings Page
+"messageHeader" = "Messages";
+"settingsHeader" = "Settings";
+"personalDetailHeader" = "Personal details";
+"aboutHeader" = "About the app";
+"logout" = "Log out";
+"popUpProfileTitle" = "Profile settings";
+"popUpProfileBody" = "Are you sure you want to log out?";
+"close" = "Close";
+
+// MARK: - Messages Page
+"welcomeMessage" = "Welcome in Club Ace!";
+"messageBody" =  "The employee has been notified of your arrival and will be there as soon as possible. In the meantime, please see the link attached if interested in a snack or drink. \n\nHave a great day and thanks for using the Ace Guest app! \n\nSincerely, \n\nThe Ace Family";
+"attachment" = "Attachment";
+
+// MARK: - App Settings Page
+"appSettingsHeaderText" = "App settings";
+"pushNotifications" = "Push notifications";
+
+// MARK: - Personal Details Page
+"personalDetailsHeader" = "Personal details";
+"emailAdress" = "Email address";
+"startDateAndTime" = "Start date/time";
+"endDateAndTime" = "End date/time";
+
+// MARK: - NFC Page
+"phoneNearReader" = "Hold your iPhone near the Club Ace door reader";
+"moreThenOneTag" = "More then one Tag Detected, please try again";
+"unableToConnect" = "Unable to connect to Tag";
+"notSupported" = "Not supported, unable to connect to Tag";
+"readNDEFFailed" = "Read NDEF message Failed";
+"writeNDEFFailed" = "Write NDEF message Failed";
+"succesfullyScannedReader" = "You have succesfully scanned the Club Ace door reader!";
+"unknowError" = "Unknow error";
+
+// MARK: - Notification's
+"welcomeNotificationTitle" = "Welcome in the Club Ace building!";
+"welcomeNotificationSubTitle" = "The employee will be informed of your arival as soon as possible";
+
+// MARK: - Remainings
+"accessCode" = "Access code";
+"dismiss" = "Dismiss";

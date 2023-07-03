@@ -1,0 +1,91 @@
+//
+//  Ace Guest
+//
+
+// MARK: - Login Page
+"registerTitle" = "Registreer uw toegangspas.";
+"register" = "Registreer";
+"noAccesCode" = "Geen HID Mobile Access-uitnodigingscode ontvangen?";
+"contact" = "Neem dan contact op met de receptie";
+"alertFailedAccessTitle" = "Mislukte toegangspasregistratie";
+"alertFailedAccessBody" = "De toegang is tijdelijk uitgeschakeld vanwege vele mislukte inlogpogingen. Probeer het over 5 minuten nog eens of raadpleeg de receptie";
+
+// MARK: - Register Page
+"startAndEndTime" = "Begin / eindtijd";
+"startDate" = "Start datum";
+"endDate" = "Eind datum";
+"eMailGuest" = "E-mail gast";
+"generateAccesscode" = "Toegangscode genereren";
+"registerGuest" = "Registreer gast";
+"guestRegistered" = "Gast geregistreerd!";
+"hassAccessFrom" = "heeft toegang tot Club Ace van";
+"till" = "tot";
+"clubAceRegistration" = "Club Ace Gastregistratie";
+"contactRegister" = "\nNeem voor registratiewijzigingen contact op met de receptie";
+
+// MARK: - Landing Page
+"landingTitle" = "Welkom \nin Club Ace!";
+"landingBody" = "Doorloop deze snelle installatie om het meeste uit deze app te halen.";
+
+// MARK: - OnBoarding Page
+"notificationOnBoardingTitle" = "Hoe communiceren we?";
+"notificationOnBoardingSubTitle" = "Bij het betreden van het Club Ace kantoor worden belangrijke notificaties verzonden, zoals de statusupdates van uw huidige afspraak!";
+"nfcOnBoardingTitle" = "Hoe krijgt u toegang in het Club Ace kantoor?";
+"nfcOnBoardingSubTitle" = "Om de voordeur te openen gebruikt de app NFC om de HID-lezer te scannen!";
+"next" = "Volgende";
+"accepted" = "Accepteer";
+
+// MARK: - CardView Page
+"accessPassTitle" = "Toegangspas";
+
+// MARK: - Terms And Conditions Page
+"ourConditionsTitle" = "Onze voorwaarden";
+"termsAndConditionsBody" = "Lees en accepteer de voorwaarden voordat je aan de slag kunt met je account.";
+"iAgreeTermsAndConditions" = "Ik ga akkoord met de ";
+"termsAndConditions" = "Voorwaarden";
+"iAgreePrivacyPolicy" = "Ik ga akkoord met het ";
+"privacyPolicy" = "privacybeleid";
+"errorMessageTermsAndConditions" = "U moet zowel de algemene voorwaarden als het privacybeleid accepteren om door te gaan.";
+
+// MARK: -  Settings Page
+"messageHeader" = "Berichten";
+"settingsHeader" = "Instellingen";
+"personalDetailHeader" = "Persoonlijke gegevens";
+"aboutHeader" = "Over de applicatie";
+"logout" = "Uitloggen";
+"popUpProfileTitle" = "Profielinstellingen";
+"popUpProfileBody" = "Weet je zeker dat je wilt uitloggen?";
+"close" = "Sluit";
+
+// MARK: - Messages Page
+"welcomeMessage" = "Welkom in Club Ace!";
+"messageBody" =  "De medewerker is op de hoogte gebracht van uw komst en komt zo snel mogelijk ter plaatse. Zie in de tussentijd bij interesse in een hapje of drankje de bijgevoegde link. \n\nFijne dag verder en bedankt voor het gebruik van de Ace Guest-app! \n\nMet vriendelijke groet, \n\nDe familie Ace";
+"attachment" = "Bijlage";
+
+// MARK: - App Settings Page
+"appSettingsHeaderText" = "App instellingen";
+"pushNotifications" = "Push-meldingen";
+
+// MARK: - Personal Details Page
+"personalDetailsHeader" = "Persoonlijke gegevens";
+"emailAdress" = "E-mailadres";
+"startDateAndTime" = "Start datum/tijd";
+"endDateAndTime" = "Eind datum/tijd";
+
+// MARK: - NFC Page
+"phoneNearReader" = "Houd uw iPhone tegen de Club Ace deurlezer aan";
+"moreThenOneTag" = "Meer dan één tag gedetecteerd, probeer het opnieuw";
+"unableToConnect" = "Kan geen verbinding maken met Tag";
+"notSupported" = "Niet ondersteund, kan geen verbinding maken met Tag";
+"readNDEFFailed" = "Het lezen van het NDEF bericht is gefaald";
+"writeNDEFFailed" = "Het schrijven van het NDEF bericht is gefaald";
+"succesfullyScannedReader" = "U heeft de Club Ace deurlezer succesvol gescand!";
+"unknowError" = "Onbekende fout";
+
+// MARK: - Notification's
+"welcomeNotificationTitle" = "Welkom in het Club Ace pand!";
+"welcomeNotificationSubTitle" = "De medewerker wordt zo spoedig mogelijk op de hoogte gebracht van uw aankomst";
+
+// MARK: - Remainings
+"accessCode" = "Toegangscode";
+"dismiss" = "Afwijzen";

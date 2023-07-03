@@ -36,44 +36,7 @@ struct AppSettingsView: View {
                         .toggleStyle(SwitchToggleStyle(tint: Color(Colors.systemRed)))
                     
                 }
-                
-                HStack {
-                    Image(systemName: Images.bubbleFill)
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(Color(Colors.systemRed))
-                    
-                    
-                    Text(Strings.couponDocText)
-                        .foregroundColor(.primary)
-                        .padding()
-                    
-                    Spacer ()
-                    
-                    
-                    Button(action: {
-                        
-                    }, label: {
-                        
-                        HStack {
-                            Text(Strings.englishHeader)
-                                .font(.system(size: 15))
-                                .fontWeight(.bold)
-                                .foregroundColor(.primary)
-                            
-                            Image(systemName: Images.chevronRight)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 15, height: 15)
-                                .foregroundColor(.primary)
-                        }
-                  
-                        
-                    })
-
-                    
-                }
-                
+            
             }
             
         }
